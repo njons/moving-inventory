@@ -1,2 +1,2 @@
 # Up for grabs!
-a catalogue of items up for grabs when we move :wave:
+A catalogue of house items up for grabs when we move :wave:
