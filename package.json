@@ -1,0 +1,42 @@
+{
+  "name": "up-for-grabs",
+  "version": "1.0.0",
+  "description": "A catalogue of items up for grabs when we move :wave:",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "nodemon src/server.js",
+    "test": "NODE_ENV=test tape test/*.js | tap-spec",
+    "db": "node src/db/db_build.js",
+    "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/njons/up-for-grabs.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/njons/up-for-grabs/issues"
+  },
+  "homepage": "https://github.com/njons/up-for-grabs#readme",
+  "devDependencies": {
+    "bcryptjs": "^2.4.3",
+    "codecov": "^3.1.0",
+    "cookie": "^0.3.1",
+    "env2": "^2.2.2",
+    "eslint": "^5.5.0",
+    "eslint-config-node": "^3.0.0",
+    "eslint-config-prettier": "^3.0.1",
+    "jsonwebtoken": "^8.3.0",
+    "nodemon": "^1.18.4",
+    "nyc": "^13.0.1",
+    "pg": "^7.4.3",
+    "supertest": "^3.3.0",
+    "tap-spec": "^5.0.0",
+    "tape": "^4.9.1"
+  }
+}
