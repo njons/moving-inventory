@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start": "nodemon src/server.js",
+    "start:watch": "nodemon src/app.js",
     "test": "NODE_ENV=test tape test/*.js | tap-spec",
     "db": "node src/db/db_build.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
@@ -38,5 +38,15 @@
     "supertest": "^3.3.0",
     "tap-spec": "^5.0.0",
     "tape": "^4.9.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "compression": "^1.7.3",
+    "cookie-parser": "^1.4.3",
+    "dot-env": "0.0.1",
+    "express": "^4.16.3",
+    "express-handlebars": "^3.0.0",
+    "handlebars": "^4.0.12",
+    "mime-types": "^2.1.20"
   }
 }
