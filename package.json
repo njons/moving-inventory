@@ -7,7 +7,7 @@
     "test": "test"
   },
   "scripts": {
-    "start:watch": "nodemon src/app.js",
+    "start": "nodemon src/app.js",
     "test": "NODE_ENV=test tape test/*.js | tap-spec",
     "db": "node src/db/db_build.js",
     "coverage": "nyc report --reporter=text-lcov > coverage.lcov && codecov"
