@@ -24,7 +24,7 @@ const register = require("./register");
 const detail = require("./detail");
 
 router.get("/", home.get);
-// router.get("/login", login.get);
+//router.get("/login", login.get);
 // router.post("/login", login.post);
 // router.get("/register", register.get);
 // router.post("/register", upload.single("profile"), signup.post);
