@@ -1,12 +1,11 @@
-const queries = require("../model/queries/get_item");
+const getAllItems = require("../model/queries/get_item");
 
 // handler for home page
 
 exports.get = (req, res) => {
-  console.log("this is req:", req);
   res.render("home");
-  queries.getAllItems((err, result) => {
-    console.log("this is result:", result);
+  getAllItems((err, result) => {
+    console.log("this is result in the server:", result);
   });
 };
 
