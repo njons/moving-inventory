@@ -1,17 +1,16 @@
 <!-- html specific to home page -->
 <section>
+  {{#each allItems}}
   <div class="category">
-    <h2 id="prev_category">Furniture</h2>
-    <h2 id="curr_category">Books & Magazines</h2>
-    <h2 id="next_category">Plants</h2>
+    {{#if allCategories}}
+    <h2 id="prev_category">{{ this.type }}</h2>\
 
-    {{#each items}}
       <div class="card">
         <img src="">
-        <h3 class="item_name">{{ this.name }}</h3>
+        <h3 class="item_name">{{ allItems.name }}</h3>
       </div>
-    {{/each}}
+    {{/}}
 
   </div>
-
+  {{/each}}
 </section>
